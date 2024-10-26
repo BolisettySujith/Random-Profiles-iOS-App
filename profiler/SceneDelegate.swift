@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  profiler
-//
-//  Created by Havells on 29/09/24.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

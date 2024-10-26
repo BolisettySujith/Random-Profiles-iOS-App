@@ -16,6 +16,12 @@
 		732DD70C2CA950BC00401A5F /* profilerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732DD70B2CA950BC00401A5F /* profilerTests.swift */; };
 		732DD7162CA950BC00401A5F /* profilerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732DD7152CA950BC00401A5F /* profilerUITests.swift */; };
 		732DD7182CA950BC00401A5F /* profilerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732DD7172CA950BC00401A5F /* profilerUITestsLaunchTests.swift */; };
+		732DD7252CA952F300401A5F /* ProfileTableSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732DD7242CA952F300401A5F /* ProfileTableSetup.swift */; };
+		732DD7272CA9558C00401A5F /* UsersAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732DD7262CA9558C00401A5F /* UsersAPICaller.swift */; };
+		732DD7292CA959AF00401A5F /* FooterSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732DD7282CA959AF00401A5F /* FooterSpinner.swift */; };
+		732DD72C2CA95D0900401A5F /* UserProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732DD72A2CA95D0900401A5F /* UserProfileTableViewCell.swift */; };
+		732DD72D2CA95D0900401A5F /* UserProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 732DD72B2CA95D0900401A5F /* UserProfileTableViewCell.xib */; };
+		73D771862CB0F8AB00803380 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D771852CB0F8AB00803380 /* UserProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		732DD7112CA950BC00401A5F /* profilerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = profilerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		732DD7152CA950BC00401A5F /* profilerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilerUITests.swift; sourceTree = "<group>"; };
 		732DD7172CA950BC00401A5F /* profilerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		732DD7242CA952F300401A5F /* ProfileTableSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableSetup.swift; sourceTree = "<group>"; };
+		732DD7262CA9558C00401A5F /* UsersAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAPICaller.swift; sourceTree = "<group>"; };
+		732DD7282CA959AF00401A5F /* FooterSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterSpinner.swift; sourceTree = "<group>"; };
+		732DD72A2CA95D0900401A5F /* UserProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTableViewCell.swift; sourceTree = "<group>"; };
+		732DD72B2CA95D0900401A5F /* UserProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileTableViewCell.xib; sourceTree = "<group>"; };
+		73D771852CB0F8AB00803380 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +114,16 @@
 				732DD6F42CA950BB00401A5F /* AppDelegate.swift */,
 				732DD6F62CA950BB00401A5F /* SceneDelegate.swift */,
 				732DD6F82CA950BB00401A5F /* ViewController.swift */,
+				732DD7282CA959AF00401A5F /* FooterSpinner.swift */,
+				732DD7262CA9558C00401A5F /* UsersAPICaller.swift */,
 				732DD6FA2CA950BB00401A5F /* Main.storyboard */,
+				73D771852CB0F8AB00803380 /* UserProfileViewController.swift */,
+				732DD72A2CA95D0900401A5F /* UserProfileTableViewCell.swift */,
+				732DD72B2CA95D0900401A5F /* UserProfileTableViewCell.xib */,
 				732DD6FD2CA950BC00401A5F /* Assets.xcassets */,
 				732DD6FF2CA950BC00401A5F /* LaunchScreen.storyboard */,
 				732DD7022CA950BC00401A5F /* Info.plist */,
+				732DD7242CA952F300401A5F /* ProfileTableSetup.swift */,
 			);
 			path = profiler;
 			sourceTree = "<group>";
@@ -231,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732DD72D2CA95D0900401A5F /* UserProfileTableViewCell.xib in Resources */,
 				732DD6FE2CA950BC00401A5F /* Assets.xcassets in Resources */,
 				732DD7012CA950BC00401A5F /* Base in Resources */,
 				732DD6FC2CA950BB00401A5F /* Base in Resources */,
@@ -258,9 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				732DD7252CA952F300401A5F /* ProfileTableSetup.swift in Sources */,
+				73D771862CB0F8AB00803380 /* UserProfileViewController.swift in Sources */,
 				732DD6F92CA950BB00401A5F /* ViewController.swift in Sources */,
+				732DD72C2CA95D0900401A5F /* UserProfileTableViewCell.swift in Sources */,
 				732DD6F52CA950BB00401A5F /* AppDelegate.swift in Sources */,
 				732DD6F72CA950BB00401A5F /* SceneDelegate.swift in Sources */,
+				732DD7292CA959AF00401A5F /* FooterSpinner.swift in Sources */,
+				732DD7272CA9558C00401A5F /* UsersAPICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +466,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9PUXS2DXP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = profiler/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -469,6 +494,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9PUXS2DXP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = profiler/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
